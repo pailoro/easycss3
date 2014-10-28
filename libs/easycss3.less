@@ -19,3 +19,15 @@ Fernando Aureliano - @Pailoro
 			-webkit-border-radius: 	@radius;
 	        border-radius: 			@radius;		
 }
+
+
+.corner( @topright: 5px, @bottomright: 5px, @bottomleft: 5px, @topleft: 5px ) {
+		  	-webkit-border-top-right-radius: 		@topright;
+			-webkit-border-bottom-right-radius: 	@bottomright;
+	 	 	-webkit-border-bottom-left-radius: 		@bottomleft;
+	        -webkit-border-top-left-radius: 		@topleft;
+			 	   		border-top-right-radius: 	@topright;
+						border-bottom-right-radius: @bottomright;
+				 		border-bottom-left-radius: 	@bottomleft;
+						border-top-left-radius: 	@topleft;		
+}
