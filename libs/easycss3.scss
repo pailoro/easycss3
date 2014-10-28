@@ -104,7 +104,7 @@ Fernando Aureliano - @Pailoro
 
 // -------------------------------------------------- pending
 
-@mixin 2borders( 
+@mixin borders2 ( 
 	$color1: #993300,
 	$color2: #FF9900,
 	$width:	 1px,
@@ -117,8 +117,9 @@ Fernando Aureliano - @Pailoro
 	     -o-box-shadow: 0 0 0 1px $color2;	
 	   		box-shadow: 0 0 0 1px $color2;
 	   		
-	   		@include corners ( $radius );
+	   		@include corners ( $radius )
  
 }
+
 
 // -------------------------------------------------- what it does: see link below
