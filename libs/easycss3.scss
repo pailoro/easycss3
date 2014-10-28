@@ -13,3 +13,11 @@ Fernando Aureliano - @Pailoro
 * To Public License, Version 2, as published by Sam Hocevar. See
 * http://sam.zoy.org/wtfpl for more details. 
 ===============================*/
+
+@mixin corners( $radius: 5px ) {
+			-webkit-border-radius: 	$radius;
+			-moz-border-radius: 	$radius;
+	   		-o-border-radius: 		$radius;
+	        border-radius: 			$radius;	
+
+}
