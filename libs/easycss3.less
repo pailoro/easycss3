@@ -131,3 +131,14 @@ Fernando Aureliano - @Pailoro
 	-webkit-resize: @direction;
 	        resize: @direction;
 }
+
+
+.gradient( 
+	@start: #000, 
+	@end: #fff,
+	@switch: 100%
+) {
+	background:  @start;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(@start), color-stop(@switch, @end));
+	background: linear-gradient(top, @start, @end @switch);
+}
