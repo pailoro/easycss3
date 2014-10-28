@@ -111,6 +111,8 @@ Fernando Aureliano - @Pailoro
 	@params 
 ) {
 	-webkit-transform: @params;
+	   -moz-transform: @params;
+  	     -o-transform: @params;
   	        transform: @params;
 }
 
@@ -124,8 +126,9 @@ Fernando Aureliano - @Pailoro
 
 ) {
 	border: @width solid @color1;
- 
-	-webkit-box-shadow: 0 0 0 1px @color2;	
+	-webkit-box-shadow: 0 0 0 1px @color2;
+	   -moz-box-shadow: 0 0 0 1px @color2;
+	     -o-box-shadow: 0 0 0 1px @color2;	
 	   		box-shadow: 0 0 0 1px @color2;
 	   		
 	   		.corners ( @radius )
@@ -145,6 +148,8 @@ Fernando Aureliano - @Pailoro
  
  
 	-webkit-box-shadow: 0 0 0 1px @color2, 0 0 0 2px @color3;	
+	   -moz-box-shadow: 0 0 0 1px @color2, 0 0 0 2px @color3;
+	   	 -o-box-shadow: 0 0 0 1px @color2, 0 0 0 2px @color3;
 	   		box-shadow: 0 0 0 1px @color2, 0 0 0 2px @color3;
 	   		
 	   		.corners ( @radius )
@@ -155,6 +160,8 @@ Fernando Aureliano - @Pailoro
 
 .flex( @val: 1 ) {
 	-webkit-box-flex: @val;
+	   -moz-box-flex: @val;
+	     -o-box-flex: @val;
 	        box-flex: @val;
 }
 
@@ -162,6 +169,8 @@ Fernando Aureliano - @Pailoro
 
 .resize( @direction: both ) {
 	-webkit-resize: @direction;
+	   -moz-resize: @direction;
+	     -o-resize: @direction;
 	        resize @direction;
 }
 
@@ -174,6 +183,8 @@ Fernando Aureliano - @Pailoro
 ) {
 	background:  @start;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(@start), color-stop(@switch, @end));
+    background: -moz-linear-gradient(top, @start, @end @switch);
+	background: -o-linear-gradient(top, @start, @end @switch);
 	background: linear-gradient(top, @start, @end @switch);
 }
 
