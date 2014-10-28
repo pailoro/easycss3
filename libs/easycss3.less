@@ -32,6 +32,7 @@ Fernando Aureliano - @Pailoro
 						border-top-left-radius: 	@topleft;		
 }
 
+
 .shadow( 
 	@x: 4px, 
 	@y: 4px, 
@@ -43,6 +44,7 @@ Fernando Aureliano - @Pailoro
 			box-shadow: @x @y @blur @spread @color;	
 }
 
+
 .glow(  
 	@blur: 5px, 
 	@spread: 0, 
@@ -50,4 +52,14 @@ Fernando Aureliano - @Pailoro
 ) {
 	-webkit-box-shadow: 0 0 @blur @spread @color;
 			box-shadow: 0 0 @blur @spread @color;	
+}
+
+
+.animate(
+	@elements: all,
+	@time: 0.3s,
+	@easing: ease-in-out
+) {
+	-webkit-transition: @elements @time @easing;
+		  	transition: @elements @time @easing;			
 }
