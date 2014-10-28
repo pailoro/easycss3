@@ -84,3 +84,20 @@ Fernando Aureliano - @Pailoro
 	-webkit-transform: @params;
   	        transform: @params;
 }
+
+
+.2borders( 
+	@color1: #993300,
+	@color2: #FF9900,
+	@width:	 1px,
+	@radius: 0
+
+) {
+	border: @width solid @color1;
+ 
+	-webkit-box-shadow: 0 0 0 1px @color2;	
+	   		box-shadow: 0 0 0 1px @color2;
+	   		
+	   		.corners ( @radius )
+ 
+}
