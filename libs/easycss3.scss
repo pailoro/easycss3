@@ -69,3 +69,17 @@ Fernando Aureliano - @Pailoro
 }
 
 // -------------------------------------------------- pending
+
+
+@mixin animate(
+	$elements: all,
+	$time: 0.3s,
+	$easing: ease-in-out
+) {
+	-webkit-transition: $elements $time $easing;
+	-moz-transition: $elements $time $easing;
+	     -o-transition: $elements $time $easing;
+		  	transition: $elements $time $easing;			
+}
+
+// -------------------------------------------------- what it does: http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/
