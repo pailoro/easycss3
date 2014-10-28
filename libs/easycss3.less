@@ -142,3 +142,15 @@ Fernando Aureliano - @Pailoro
     background: -webkit-gradient(linear, 0 0, 0 100%, from(@start), color-stop(@switch, @end));
 	background: linear-gradient(top, @start, @end @switch);
 }
+
+
+.columns(
+	@count: 3,
+	@gap: 10
+) {
+	-webkit-column-count: @count;
+	        column-count: @count;
+ 
+	  -webkit-column-gap: @gap;
+	          column-gap: @gap;
+}
