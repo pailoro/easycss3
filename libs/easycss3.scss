@@ -192,3 +192,11 @@ Fernando Aureliano - @Pailoro
 }
 
 // -------------------------------------------------- what it does: http://www.quirksmode.org/css/multicolumn.html
+
+@mixin boxSize( $type: border-box ) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+	     -o-box-sizing: $type;
+	        box-sizing: $type;		
+}
+// -------------------------------------------------- what it does: http://css-tricks.com/box-sizing/
