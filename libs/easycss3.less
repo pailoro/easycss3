@@ -31,3 +31,15 @@ Fernando Aureliano - @Pailoro
 				 		border-bottom-left-radius: 	@bottomleft;
 						border-top-left-radius: 	@topleft;		
 }
+
+.shadow( 
+	@x: 4px, 
+	@y: 4px, 
+	@blur: 5px, 
+	@spread: 0, 
+	@color: #000 
+) {
+	-webkit-box-shadow: @x @y @blur @spread @color;
+			box-shadow: @x @y @blur @spread @color;	
+}
+
