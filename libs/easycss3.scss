@@ -41,3 +41,18 @@ Fernando Aureliano - @Pailoro
 }
 
 // -------------------------------------------------- what it does: http://www.css3.info/preview/rounded-border/
+
+@mixin shadow( 
+	$x: 4px, 
+	$y: 4px, 
+	$blur: 5px, 
+	$spread: 0, 
+	$color: #000 
+) {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	-moz-box-shadow: @x $y $blur $spread $color;
+	     -o-box-shadow: $x $y $blur $spread $color;
+			box-shadow: $x $y $blur $spread $color;	
+}
+
+// -------------------------------------------------- what it does: http://www.css3.info/preview/box-shadow/
