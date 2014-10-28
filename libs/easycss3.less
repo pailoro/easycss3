@@ -17,7 +17,10 @@ Fernando Aureliano - @Pailoro
 
 .corners( @radius: 5px ) {
 			-webkit-border-radius: 	@radius;
-	        border-radius: 			@radius;		
+			-moz-border-radius: 	@radius;
+	   		-o-border-radius: 		@radius;
+	        border-radius: 			@radius;	
+
 }
 
 
@@ -26,10 +29,17 @@ Fernando Aureliano - @Pailoro
 			-webkit-border-bottom-right-radius: 	@bottomright;
 	 	 	-webkit-border-bottom-left-radius: 		@bottomleft;
 	        -webkit-border-top-left-radius: 		@topleft;
+	        -moz-border-top-right-radius: 		@topright;
+		      	-moz-border-bottom-right-radius: 	@bottomright;
+				-moz-border-bottom-left-radius: 	@bottomleft;
+		       	-moz-border-top-left-radius: 		@topleft;
+		     		-o-border-bottom-right-radius:  @bottomright;
+		      		-o-border-bottom-left-radius: 	@bottomleft;
+		         	-o-border-top-left-radius: 		@topleft;
 			 	   		border-top-right-radius: 	@topright;
 						border-bottom-right-radius: @bottomright;
 				 		border-bottom-left-radius: 	@bottomleft;
-						border-top-left-radius: 	@topleft;		
+						border-top-left-radius: 	@topleft		
 }
 
 // -------------------------------------------------- what it does: http://www.css3.info/preview/rounded-border/
@@ -43,6 +53,8 @@ Fernando Aureliano - @Pailoro
 	@color: #000 
 ) {
 	-webkit-box-shadow: @x @y @blur @spread @color;
+	-moz-box-shadow: @x @y @blur @spread @color;
+	     -o-box-shadow: @x @y @blur @spread @color;
 			box-shadow: @x @y @blur @spread @color;	
 }
 
@@ -75,7 +87,7 @@ Fernando Aureliano - @Pailoro
 .opacity(@opacity: 0.5) {
 		-khtml-opacity: @opacity;
 	   -webkit-opacity: @opacity;
-			   opacity: @opacity;
+			   opacity: @opacity
 }
 
 // -------------------------------------------------- what it does: http://www.w3schools.com/css/css_image_transparency.asp
@@ -142,7 +154,7 @@ Fernando Aureliano - @Pailoro
 
 .resize( @direction: both ) {
 	-webkit-resize: @direction;
-	        resize: @direction;
+	        resize @direction;
 }
 
 // -------------------------------------------------- what it does: http://www.w3schools.com/css3/css3_pr_resize.asp
