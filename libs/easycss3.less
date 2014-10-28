@@ -43,3 +43,11 @@ Fernando Aureliano - @Pailoro
 			box-shadow: @x @y @blur @spread @color;	
 }
 
+.glow(  
+	@blur: 5px, 
+	@spread: 0, 
+	@color: #000 
+) {
+	-webkit-box-shadow: 0 0 @blur @spread @color;
+			box-shadow: 0 0 @blur @spread @color;	
+}
