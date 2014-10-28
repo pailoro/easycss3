@@ -83,3 +83,14 @@ Fernando Aureliano - @Pailoro
 }
 
 // -------------------------------------------------- what it does: http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/
+
+
+@mixin opacity($opacity: 0.5) {
+		-khtml-opacity: $opacity;
+	   -webkit-opacity: $opacity;
+	   	  -moz-opacity: $opacity;
+	   	    -o-opacity: $opacity;
+			   opacity: $opacity;
+}
+
+// -------------------------------------------------- what it does: http://www.w3schools.com/css/css_image_transparency.asp
