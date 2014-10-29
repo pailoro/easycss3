@@ -5,6 +5,7 @@
 .element {
 	color: red;
 	@include corners(10px);
+	@include animate;
 	
 	&:hover { color: blue; }
 }
