@@ -133,5 +133,18 @@
 	background: -o-linear-gradient(top, $start, $end $switch)
 	background: linear-gradient(top, $start, $end $switch)
 
-
 // -------------------------------------------------- what it does: http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/
+
+=columns( $count: 3, $gap: 10 )
+	-webkit-column-count: $count
+	-moz-column-count: $count
+	-o-column-count: $count
+	column-count: $count
+
+	-webkit-column-gap: $gap
+	-moz-column-gap: $gap
+	-o-column-gap: $gap
+	column-gap: $gap
+
+
+// -------------------------------------------------- what it does: http://www.quirksmode.org/css/multicolumn.html
