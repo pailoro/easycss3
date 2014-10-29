@@ -96,3 +96,16 @@
 	@include corners ( $radius )
 
 // -------------------------------------------------- what it does: see link below
+
+@mixin borders3( $color1: #993300, $color2: #FF9900, $color3: #009900, $width: 1px, $radius: 0 )
+	border: $width solid $color1
+
+	-webkit-box-shadow: 0 0 0 1px $color2, 0 0 0 2px $color3	
+	-moz-box-shadow: 0 0 0 1px $color2, 0 0 0 2px $color3
+	-o-box-shadow: 0 0 0 1px $color2, 0 0 0 2px $color3
+	box-shadow: 0 0 0 1px $color2, 0 0 0 2px $color3
+
+	@include corners ( $radius )
+
+
+// -------------------------------------------------- what it does:  http://weston.ruter.net/2009/06/15/multiple-borders-via-css-box-shadow/
