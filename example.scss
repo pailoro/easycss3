@@ -1,0 +1,12 @@
+//import lib
+@import "libs/easycss3.scss";
+
+// call css3 with parameters
+.element {
+	color: red;
+	@include corners(10px);
+	
+	&:hover {
+		color: blue;
+	}
+}
