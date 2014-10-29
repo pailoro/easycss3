@@ -49,3 +49,30 @@
 
 // -------------------------------------------------- what it does: http://www.css3.info/preview/box-shadow/
 
+=glow( $blur: 5px, $spread: 0, $color: #000 ) 
+	-webkit-box-shadow: 0 0 $blur $spread $color
+	-moz-box-shadow: 0 0 $blur $spread $color
+	-o-box-shadow: 0 0 $blur $spread $color
+	box-shadow: 0 0 $blur $spread $color
+
+
+// -------------------------------------------------- pending
+
+=animate( $elements: all, $time: 0.3s, $easing: ease-in-out)
+	-webkit-transition: $elements $time $easing
+	-moz-transition: $elements $time $easing
+	-o-transition: $elements $time $easing
+	transition: $elements $time $easing		
+
+
+// -------------------------------------------------- what it does: http://net.tutsplus.com/tutorials/html-css-techniques/css-fundametals-css-3-transitions/
+
+=opacity($opacity: 0.5) 
+	-khtml-opacity: $opacity
+	-webkit-opacity: $opacity
+	-moz-opacity: $opacity
+	-o-opacity: $opacity
+	opacity: $opacity
+
+
+// -------------------------------------------------- what it does: http://www.w3schools.com/css/css_image_transparency.asp
