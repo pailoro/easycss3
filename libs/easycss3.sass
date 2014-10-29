@@ -125,3 +125,13 @@
 	resize: $direction
 
 // -------------------------------------------------- what it does: http://www.w3schools.com/css3/css3_pr_resize.asp
+
+=gradient( $start: #000, $end: #fff, $switch: 100% )
+	background:  $start
+	background: -webkit-gradient(linear, 0 0, 0 100%, from($start), color-stop($switch, $end))
+	background: -moz-linear-gradient(top, $start, $end $switch)
+	background: -o-linear-gradient(top, $start, $end $switch)
+	background: linear-gradient(top, $start, $end $switch)
+
+
+// -------------------------------------------------- what it does: http://www.webdesignerwall.com/tutorials/cross-browser-css-gradient/
