@@ -1,0 +1,38 @@
+{
+  "name": "easycss3",
+  "version": "0.1",
+  "homepage": "https://github.com/pailoro/easycss3",
+  "authors": [
+    "Fernando Aureliano <mail@fernandoaureliano.com>"
+  ],
+  "description": "A easy way to use css3 in your less, sass or scss code.",
+  "main": "/lib",
+  "keywords": [
+    "css3",
+    "html5",
+    "easy",
+    "less",
+    "sass",
+    "scss",
+    "animation",
+    "corner",
+    "shadow",
+    "glw",
+    "animate",
+    "opacity",
+    "rotate",
+    "transform",
+    "border",
+    "resize",
+    "gradient",
+    "column"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
