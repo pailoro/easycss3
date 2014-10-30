@@ -35,6 +35,6 @@
     "test",
     "tests",
     "README.md",
-    "example.*",
+    "example.*"
   ]
 }
